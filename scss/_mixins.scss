@@ -1,0 +1,80 @@
+@function calcpercent($z) {
+	@return ($z/100)*100%;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin center-vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin center-xy {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+@mixin center-xy-offset-x($x) {
+	position: absolute;
+	top: 50%;
+	left: calcpercent($x);
+	-webkit-transform: translate(-calcpercent($x),-50%);
+	-ms-transform: translate(-calcpercent($x),-50%);
+	transform: translate(-calcpercent($x),-50%);
+}
+
+@mixin text-size-adjust($x) {
+	-webkit-text-size-adjust: $x;
+	-moz-text-size-adjust: $x;
+	-ms-text-size-adjust: $x;
+	-o-text-size-adjust: $x;
+	text-size-adjust: $x;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/*@mixin drop-shadow-filter($x, $y, $z, $c, $o) {
+	-webkit-filter: drop-shadow($x $y $z rgba($c, $o));
+	filter: url(shadow.svg#drop-shadow);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=$x, OffY=$y, Color='$c')";
+	filter: "progid:DXImageTransfrom.Microsoft.Dropshadow(OffX=$x, OffY=$y, Color='$c')";
+}*/
+
+/*
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+<filter id="drop-shadow">
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
+<feOffset dx="12" dy="12" result="offsetblur"/>
+<feFlood flood-color="rgba(0,0,0,0.5)"/>
+<feComposite in2="offsetblur" operator="in"/>
+<feMerge>
+<feMergeNode/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+</svg>
+*/
