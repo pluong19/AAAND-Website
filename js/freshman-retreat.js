@@ -1,12 +1,15 @@
-// On load/resize, resize the YT Video
-$( document ).ready(loadIframe);
+// $(document).ready(function(){
+//
+// });
 
-// TODO: determine how to resize video if resize window
-//$( window ).resize(resizeIframe);
+$("#welcomeNav").click(function() {
+    $('html, body').animate({ scrollTop:$("#welcome").offset().top}, 500);
+});
 
 // Resize YouTube iFrame
 function loadIframe(obj) {
-  var width = window.innerWidth*.75;
-  obj.style.width =  width+ 'px';
+  var width = document.getElementById("welcome").clientWidth
+  width -= 2*parseInt($("#welcome").css('padding-left'), 10)
+  obj.style.width =  width + 'px';
   obj.style.height = width*9/16 + 'px';
 }
