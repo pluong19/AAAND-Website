@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Raleway');
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -8,7 +8,7 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: 'Roboto Slab';
+  font-family: 'Raleway', sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%
 }
@@ -6967,12 +6967,84 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
 
+
 /* Hai's stuff */
-footer {
-  color: #FFFFFF;
-  background-color: #383737;
+
+.container-fluid {
+  padding: 0px;
 }
 
 .noIbar {
   cursor:default;
+}
+
+.navbar {
+  padding: 0px 15px 0px 15px;
+}
+
+.nav.navbar-nav.navbar-right a:hover {
+  background-color: #777;
+}
+
+.leaderdescription {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.leadername {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: x-large;
+  font-weight: 900;
+  margin: 20px 0px 0px 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.leaderpic {
+  width: auto;
+  height: auto;
+  padding: 10px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+div.container.leaderrow {
+  background-color: #999;
+  margin: 20px 0px 20px 0px;
+  padding: 10px;
+}
+
+div.container-fluid.retreatheader {
+  background-color: #222;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: xx-large;
+  font-weight: 900;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 23% 10px 23% 10px;
+}
+
+div.container-fluid.retreatvideo {
+  margin: 30px auto 30px auto;
+}
+
+div.jumbotron {
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+}
+
+div.jumbotron.countdown {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 23% 0px 23% 0px;
+}
+
+footer {
+  color: #FFFFFF;
+  background-color: #383737;
 }

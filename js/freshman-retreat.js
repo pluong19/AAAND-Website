@@ -9,9 +9,10 @@ $("#welcomeNav").click(function() {
 // Resize YouTube iFrame
 function loadIframe(obj) {
   var width = document.getElementById("welcome").clientWidth
-  width -= 2*parseInt($("#welcome").css('padding-left'), 10)
+  console.log(width)
+  width *= .8  // originally had "width -= 2*parseInt($("#welcome").css('padding-top'), 10)"  to subtract a padding of 10
   obj.style.width =  width + 'px';
-  obj.style.height = width*9/16 + 'px';
+  obj.style.height = Math.ceil(width*9/16) + 'px';
 }
 
 /* Source: https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
@@ -35,7 +36,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         navBarHeight = document.getElementById("navBar").clientHeight
-        scrollHeight = target.offset().top-navBarHeight-15 // 15 for padding
+        scrollHeight = target.offset().top-navBarHeight
         $('html, body').animate({
           scrollTop: scrollHeight
         });
