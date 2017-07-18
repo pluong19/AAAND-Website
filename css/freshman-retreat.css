@@ -7050,10 +7050,13 @@ footer {
 div#infocontainer.container {
   background-color: #999;
   font-family: 'Didact Gothic', sans-serif;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
   padding: 10px 20px 10px 20px;
   margin: 40px auto 40px auto;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
 }
 
 
@@ -7071,6 +7074,18 @@ div#infocontainer.container {
 
 .nav.navbar-nav.navbar-right a:hover {
   background-color: #777;
+}
+
+#gallery {
+  padding-bottom: 40px;
+  margin: 5px auto 5px auto;
+}
+
+div#gallerpic li:hover{
+  width: 110%;
+  height: 110%;
+  background-color: #777;
+
 }
 
 #textcenter {
