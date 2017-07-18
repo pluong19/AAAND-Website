@@ -8,8 +8,7 @@ $("#welcomeNav").click(function() {
 
 // Resize YouTube iFrame
 function loadIframe(obj) {
-  var width = document.getElementById("welcome").clientWidth
-  console.log(width)
+  var width = document.getElementById("info").clientWidth
   width *= .8  // originally had "width -= 2*parseInt($("#welcome").css('padding-top'), 10)"  to subtract a padding of 10
   obj.style.width =  width + 'px';
   obj.style.height = Math.ceil(width*9/16) + 'px';

@@ -6970,20 +6970,15 @@ button.close {
 
 /* Hai's stuff */
 
-.container-fluid {
-  padding: 0px;
-}
+#left { float: left; }
+#center { display: inline-block; }
+#right { float: right; }
 
-.noIbar {
-  cursor:default;
-}
-
-.navbar {
-  padding: 0px 15px 0px 15px;
-}
-
-.nav.navbar-nav.navbar-right a:hover {
-  background-color: #777;
+.bosspic {
+  width: auto;
+  height: auto;
+  padding: 10px 20px 0px 20px;
+  margin: 0px 0px 0px 0px;
 }
 
 .leaderdescription {
@@ -7012,10 +7007,17 @@ img {
   margin: 0px 0px 0px 0px;
 }
 
+.letter {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 0% 10% 0px 10%;
+}
+
 div.container.leaderrow {
   background-color: #999;
-  margin: 20px 0px 20px 0px;
-  padding: 10px;
+  margin: 20px 5px 20px 5px;
+  padding: 10px 10px 20px 10px;
 }
 
 div.container-fluid.retreatheader {
@@ -7047,4 +7049,39 @@ div.jumbotron.countdown {
 footer {
   color: #FFFFFF;
   background-color: #383737;
+}
+
+div#infocontainer.container {
+  background-color: #999;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+}
+
+
+.container-fluid {
+  padding: 0px;
+}
+
+.noIbar {
+  cursor:default;
+}
+
+.navbar {
+  padding: 0px 15px 0px 15px;
+}
+
+.nav.navbar-nav.navbar-right a:hover {
+  background-color: #777;
+}
+
+#textcenter {
+  text-align: center;
+}
+
+#round { border-radius: 15px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+background-color: #999;
 }
