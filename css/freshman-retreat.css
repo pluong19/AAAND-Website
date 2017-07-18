@@ -7042,9 +7042,10 @@ div.jumbotron.countdown {
   padding: 23% 0px 23% 0px;
 }
 
-footer {
+footer.container-fluid {
   color: #FFFFFF;
   background-color: #383737;
+  padding: 50px 20px 20px 20px;
 }
 
 div#messagecontainer.container {
