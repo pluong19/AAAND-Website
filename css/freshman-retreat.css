@@ -6977,6 +6977,10 @@ button.close {
   margin: 0px 0px 0px 0px;
 }
 
+.container-fluid {
+  padding: 0px;
+}
+
 .leaderdescription {
   font-family: 'Didact Gothic', sans-serif;
   font-size: large;
@@ -7027,10 +7031,6 @@ div.container-fluid.retreatheader {
   padding: 23% 10px 23% 10px;
 }
 
-div.container-fluid.retreatvideo {
-  margin: 30px auto 30px auto;
-}
-
 div.jumbotron {
   font-family: 'Raleway', sans-serif;
   margin: 0px;
@@ -7047,21 +7047,17 @@ footer {
   background-color: #383737;
 }
 
-div#infocontainer.container {
+div#messagecontainer.container {
   background-color: #999;
   font-family: 'Didact Gothic', sans-serif;
   font-size: x-large;
   font-weight: bold;
-  padding: 10px 20px 10px 20px;
+  padding: 15px 20px 10px 20px;
   margin: 40px auto 40px auto;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
-}
-
-
-.container-fluid {
-  padding: 0px;
+  text-align: center;
 }
 
 .noIbar {
@@ -7090,6 +7086,10 @@ div#gallerpic li:hover{
 
 #textcenter {
   text-align: center;
+}
+
+#retreatvideo {
+  margin: 30px auto 30px auto;
 }
 
 #round { border-radius: 15px;
