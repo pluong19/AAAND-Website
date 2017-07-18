@@ -7009,9 +7009,9 @@ img {
 
 .letter {
   font-family: 'Didact Gothic', sans-serif;
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold;
-  padding: 0% 7% 0px 7%;
+  padding: 0% 7% 0% 7%;
 }
 
 div.container.leaderrow {
@@ -7055,9 +7055,9 @@ div#messagecontainer.container {
   font-weight: bold;
   padding: 15px 20px 10px 20px;
   margin: 40px auto 40px auto;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
   text-align: center;
 }
 
@@ -7093,8 +7093,8 @@ div#gallerpic li:hover{
   margin: 30px auto 30px auto;
 }
 
-#round { border-radius: 15px;
--webkit-border-radius: 15px;
--moz-border-radius: 15px;
+#round { border-radius: 25px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
 background-color: #999;
 }
