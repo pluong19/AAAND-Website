@@ -7053,7 +7053,7 @@ div#messagecontainer.container {
   font-family: 'Didact Gothic', sans-serif;
   font-size: x-large;
   font-weight: bold;
-  padding: 15px 20px 10px 20px;
+  padding: 15px 10% 10px 10%;
   margin: 40px auto 40px auto;
   border-radius: 25px;
   -webkit-border-radius: 25px;
