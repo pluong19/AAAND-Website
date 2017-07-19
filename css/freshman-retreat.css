@@ -7041,13 +7041,13 @@ div.container-fluid.retreatheader {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: xx-large;
-  font-weight: 900;
+  font-weight: 300;
   text-align: center;
 }
 
 .headerbox {
   padding: 55px 15px 55px 15px;
-  margin: 0px 10% 0px 10%;
+  margin: 0px 17% 0px 17%;
   background-color: rgba(33, 33, 33, 0.6);
 }
 
