@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Raleway');
 
+:root {
+    --body-color: #EEE;
+    --main-color: #222;
+    --text-color: #EEE;
+    --retreat-color: #ff5c33;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6970,9 +6977,10 @@ button.close {
 
 /* Hai's stuff */
 
-:root {
-    --main-color: #333;
-    --text-color: #EEE;
+/* NOTE: CTRL+F ':root' to locate color variables */
+
+body {
+  background-color: var(--body-color);
 }
 
 .bosspic {
@@ -7041,7 +7049,7 @@ div.container-fluid.retreatheader {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: xx-large;
-  font-weight: 300;
+  font-weight: 420;
   text-align: center;
 }
 
@@ -7099,6 +7107,10 @@ footer.container-fluid {
   text-align: center;
 }
 
+#navcolor {
+  color: var(--text-color);
+}
+
 #textcenter {
   text-align: center;
 }
@@ -7107,4 +7119,8 @@ footer.container-fluid {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
+}
+
+#signupbanner {
+  background-color: var(--retreat-color);
 }

@@ -26,7 +26,7 @@ $('a[href*="#"]')
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
-        navBarHeight = document.getElementById("navBar").clientHeight
+        navBarHeight = document.getElementById("navBarScrollID").clientHeight
         scrollHeight = target.offset().top-navBarHeight
         $('html, body').animate({
           scrollTop: scrollHeight

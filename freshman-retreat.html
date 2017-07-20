@@ -22,42 +22,49 @@
 	</head>
   <body>
     <!-- Sticky navbar -->
-		<nav class="navbar navbar-default navbar-fixed-top" id="navBar">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="navBarScrollID">
 	    <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" id="navcolor">
     				<span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
   				</button>
-          <a class="navbar-brand" href="https://www.nd.edu/~aaa" target="_blank" rel="noopener"><span class="glyphicon glyphicon-home"></span>&nbsp;Back to AAA</a>
+          <a id="navcolor" class="navbar-brand" href="https://www.nd.edu/~aaa" target="_blank" rel="noopener"><span class="glyphicon glyphicon-home"></span>&nbsp;Back to AAA</a>
 				</div>
   			<!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-						<li><a href="#welcome" class="noIbar"><span class="glyphicon glyphicon-heart"></span>&nbsp;Welcome</a></li>
-            <li><a href="#info" class="noIbar"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Retreat Information</a></li>
-            <li><a href="#leaders" class="noIbar"><span class="glyphicon glyphicon-star"></span>&nbsp;Table Leaders</a></li>
-            <li><a href="#aaa" class="noIbar"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;AAA</a></li>
-            <li><a href="#faq" class="noIbar"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;FAQ</a></li>
+						<li><a href="#welcome" class="noIbar" id="navcolor"><span class="glyphicon glyphicon-heart"></span>&nbsp;Welcome</a></li>
+            <li><a href="#info" class="noIbar" id="navcolor"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Retreat Information</a></li>
+            <li><a href="#leaders" class="noIbar" id="navcolor"><span class="glyphicon glyphicon-star"></span>&nbsp;Table Leaders</a></li>
+            <li><a href="#aaa" class="noIbar" id="navcolor"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;AAA</a></li>
+            <li><a href="#faq" class="noIbar" id="navcolor"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;FAQ</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-		<div class="jumbotron">
+		<div class="jumbotron" id="signupbanner">
 			<div class="container-fluid">
-				<div class="container" id="textcenter">
+				<div class="row" id="textcenter">
 					<br>
-					<h1>SIGN UP FOR THE 2017 AAA FRESHMAN RETREAT <a href="https://campusministry.nd.edu/get-involved/retreats-pilgrimages/asian-asian-american-freshman-retreat/" target="_blank" rel="noopener"><button button type="button" class="btn btn-primary btn-lg"><h4>HERE!</h4></button></a></h1>
+					<h1>SIGN UP FOR THE 2017 AAA FRESHMAN RETREAT <a href="https://campusministry.nd.edu/get-involved/retreats-pilgrimages/asian-asian-american-freshman-retreat/" target="_blank" rel="noopener"><button button type="button" class="btn btn-secondary btn-lg"><h4>HERE!</h4></button></a></h1>
+					<!-- Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown -->
+					<div class="col-sm-6" style="text-align: right;">
+						<h1>TIME UNTIL RETREAT:</h1>
+					</div>
+					<div class="col-sm-6" style="text-align: left;">
+						<h1 id="countdown"></h1>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid retreatheader" id="welcome">
 			<div class="headerbox" id="round">
 				<div class="headertext">
-					<h1>Welcome Freshmen!</h1>
+					<h1>WELCOME FRESHMEN!</h1>
 				</div>
 			</div>
     </div>
@@ -110,11 +117,6 @@
         </div>
       </div> <!-- End Letter Container -->
 			<div class="row">
-	      <div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v3MFjUb0Ehc" frameborder="0" allowfullscreen></iframe>
-	      </div>
-			</div>
-			<div class="row">
 				<div id="messagecontainer">
 		      <p>Check out some photos from last year's retreat!</p>
 				</div>
@@ -157,22 +159,36 @@
 		<div class="container-fluid retreatheader" id="info">
 			<div class="headerbox" id="round">
 				<div class="headertext">
-					<h1 style="padding-bottom: 10px;">AAA FRESHMAN RETREAT | AUGUST 25 &ndash; 26 2017</h1>
+					<h1 style="padding-bottom: 10px;">RETREAT INFORMATION</h1>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div id="messagecontainer">
-		      <p>The AAA Freshman Retreat is one of the three multicultural retreats available to freshmen to start their first year at Notre Dame. It is a collaborative effort between AAA and Campus Ministry and designed to help you explore your identity, faith, and culture alongside other freshmen.</p>
+					<p>DATE: AUGUST 25 &ndash; 26 2017</p>
+					<p>TIME: 4:00PM &ndash; 4:00PM</p>
+		      <p>DESCRIPTION: The AAA Freshman Retreat is one of the three multicultural retreats available to freshmen to start their first year at Notre Dame. It is a collaborative effort between AAA and Campus Ministry and designed to help you explore your identity, faith, and culture alongside other freshmen.</p>
 		    </div>
 			</div>
 		</div>
     <div class="container-fluid retreatheader" id="leaders">
 			<div class="headerbox" id="round">
 				<div class="headertext">
-					<p>Meet some of your retreat table leaders!</p>
+					<p>RETREAT LEADERS</p>
 				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div id="messagecontainer">
+					<p>Meet your retreat leaders!</p>
+		    </div>
+			</div>
+		</div>
+		<div class="container"> <!-- Promo Video -->
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v3MFjUb0Ehc" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="container"> <!-- Begin Table Leader container -->
@@ -338,7 +354,7 @@
 	              Dorm: Dillon Hall<br>
 	              Position: AAA President<br><br>
 	            </p>
-	            <p>TODO</p>
+	            <p>Hi guys! I'm Anthony, and I'll be a junior this year. Born and raised in Fort Wayne, Indiana, I haven't seen much of the rest of the world or traveled (except to Vietnam when I was six)! Two my favorite shows are Game of Thrones and Stranger Things. If you're going to be living in Dillon Hall, you'll definitely see me around, but if you live elsewhere, then come for Dillon Hall's signature milkshakes after mass on Thursday! I'm looking forward to meeting you all, and I hope to see you at the Freshman Retreat!</p>
 	          </div>
 					</div>
         </div>
@@ -354,7 +370,57 @@
 		<div class="container">
 			<div class="row">
 		    <div id="messagecontainer">
-		      <p>Information</p>
+					<div class="row" style="padding: 20px;">
+						<p>AAA is diverse student organization, and underneath it are eight additional culture clubs. Everyone, 0-100% Asian, will be able to find a group to join!</p>
+					</div>
+					<hr>
+					<div class="row" style="padding-top: 20px;">
+						<ul>Asian American Association &nbsp;|&nbsp;
+							<a href="https://www.nd.edu/~aaa/" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Website</button></a> &nbsp;|&nbsp;
+							<a href="https://www.facebook.com/aaa.of.nd/" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Facebook</button></a> &nbsp;|&nbsp;
+							<a href="https://www.instagram.com/aaa_of_nd/" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Instagram</button></a>
+						</ul><br>
+						<ul>Chinese Culture Society &nbsp;|&nbsp;
+							<a href="#" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Website</button></a> &nbsp;|&nbsp;
+							<a href="https://www.facebook.com/NDCCS/" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Facebook</button></a> &nbsp;|&nbsp;
+							<a href="#" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Instagram</button></a>
+						</ul><br>
+						<ul>Filipino American Student Organization &nbsp;|&nbsp;
+							<a href="https://faso08.wixsite.com/ndfaso/" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Website</button></a> &nbsp;|&nbsp;
+							<a href="https://www.facebook.com/FASOND/" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Facebook</button></a> &nbsp;|&nbsp;
+							<a href="#" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Instagram</button></a>
+						</ul><br>
+						<ul>Hawai'i Club &nbsp;|&nbsp;
+							<a href="#" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Website</button></a> &nbsp;|&nbsp;
+							<a href="https://www.facebook.com/NDhawaii/" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Facebook</button></a> &nbsp;|&nbsp;
+							<a href="#" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Instagram</button></a>
+						</ul><br>
+						<ul>Japan Club&nbsp;|&nbsp;
+							<a href="https://www3.nd.edu/~jclub/" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Website</button></a> &nbsp;|&nbsp;
+							<a href="https://www.facebook.com/jclubnd/" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Facebook</button></a> &nbsp;|&nbsp;
+							<a href="#" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Instagram</button></a>
+						</ul><br>
+						<ul>Korean Student Association &nbsp;|&nbsp;
+							<a href="#" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Website</button></a> &nbsp;|&nbsp;
+							<a href="https://www.facebook.com/groups/nd.ksa/" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Facebook</button></a> &nbsp;|&nbsp;
+							<a href="#" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Instagram</button></a>
+						</ul><br>
+						<ul>South-Asian Student Association &nbsp;|&nbsp;
+							<a href="https://www3.nd.edu/~iand/" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Website</button></a> &nbsp;|&nbsp;
+							<a href="#" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Facebook</button></a> &nbsp;|&nbsp;
+							<a href="#" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Instagram</button></a>
+						</ul><br>
+						<ul>Taiwanese Student Association &nbsp;|&nbsp;
+							<a href="#" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Website</button></a> &nbsp;|&nbsp;
+							<a href="https://www.facebook.com/NDtsa/" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Facebook</button></a> &nbsp;|&nbsp;
+							<a href="https://www.instagram.com/ndtsa/" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Instagram</button></a>
+						</ul><br>
+						<ul>Vietnamese Student Association &nbsp;|&nbsp;
+							<a href="http://www3.nd.edu/~vsand/" title="website" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Website</button></a> &nbsp;|&nbsp;
+							<a href="https://www.facebook.com/NDvsa/" title="facebook" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary">Facebook</button></a> &nbsp;|&nbsp;
+							<a href="#" title="instagram" target="_blank" rel="noopener"><button type="button" class="btn btn-secondary" disabled>Instagram</button></a>
+						</ul><br>
+					</div>
 				</div>
 			</div>
     </div>
@@ -368,8 +434,14 @@
 		<div class="container">
 			<div class="row">
 		    <div id="messagecontainer">
-		      <h3>What should I bring?</h3>
-		      <p>Toiletries...</p>
+					<h1>Frequently Asked Questions</h1>
+					<hr>
+		      <ul style="text-align: left; padding-left: 60px;">
+						<li><h2>What should I bring?</h2></li>
+		      	<p>Toiletries...</p>
+						<li><h2></h2></li>
+		      	<p></p>
+					</ul>
 				</div>
 		</div>
     </div>
@@ -380,13 +452,6 @@
 		    </div>
 			</div>
 		</div>
-    <div class="jumbotron countdown">
-			<!-- Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown -->
-			<center>
-				<h1>TIME UNTIL RETREAT</h1>
-				<h1 id="countdown"></h1>
-			</center>
-    </div>
 		<footer class="container-fluid" class="col-sm-12">
 			<div class="col-sm-9">
 				<h2>Contact</h2>
