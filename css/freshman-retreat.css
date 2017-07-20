@@ -7099,7 +7099,7 @@ footer.container-fluid {
   font-family: 'Didact Gothic', sans-serif;
   font-size: x-large;
   font-weight: lighter;
-  padding: 40px;
+  padding: 45px 35px 35px 35px; /* Top is +10px because of using <p> in message containers which have 10px padding-bottom */
   margin: 5%;
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -7121,6 +7121,11 @@ footer.container-fluid {
   -moz-border-radius: 25px;
 }
 
-#signupbanner {
+#promobanner {
   background-color: var(--retreat-color);
+}
+
+#promovideo {
+  background-color: var(--main-color);
+  margin: 0px 0px 40px 0px;
 }
