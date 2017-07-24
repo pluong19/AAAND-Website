@@ -9348,7 +9348,7 @@ body {
   font-family: 'Didact Gothic', sans-serif;
   font-size: large;
   font-weight: lighter;
-  padding: 10px;
+  padding: 5px;
 }
 
 .leadername {
@@ -9361,8 +9361,15 @@ body {
 .leaderpic {
   width: auto;
   height: auto;
-  padding: 20px 0px 10px 0px;
-  margin: 5px;
+  padding: 20px 0px 10px 15px;
+  margin: 0px 0px 0px 0px;
+}
+
+.leaderrow {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  margin: 20px 5px 20px 5px;
+  padding: 10px 30px 20px 10px;
 }
 
 .letter {
@@ -9370,13 +9377,6 @@ body {
   font-size: x-large;
   font-weight: 500;
   padding: 0% 7% 0% 7%;
-}
-
-.leaderrow {
-  background-color: var(--main-color);
-  color: var(--text-color);
-  margin: 20px 5px 20px 5px;
-  padding: 10px 10px 20px 10px;
 }
 
 img {
@@ -9419,14 +9419,19 @@ div.jumbotron.countdown {
   padding: 23% 0px 23% 0px;
 }
 
-footer.container-fluid {
-  color: var(--text-color);
-  background-color: #383737;
-  padding: 150px 0px 20px 40px;
-}
-
 .noIbar {
   cursor:default;
+}
+
+#faqtext {
+  padding: 0px 50px 20px 20px;
+}
+
+#footer {
+  color: var(--text-color);
+  background-color: #383737;
+  padding: 100px 0px 20px 40px;
+  margin: auto; /* Necessary, or else page will extend far right. */
 }
 
 #gallery {
@@ -9476,7 +9481,7 @@ footer.container-fluid {
   font-family: 'Didact Gothic', sans-serif;
   font-size: x-large;
   font-weight: lighter;
-  padding: 7% 0% 3% 12%;
+  padding: 0px .25rem 0px .25rem;
   margin: 5%;
   border-radius: 25px;
   -webkit-border-radius: 25px;
