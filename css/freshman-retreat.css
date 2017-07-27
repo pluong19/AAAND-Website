@@ -9431,7 +9431,7 @@ div.jumbotron.countdown {
 #footer {
   color: var(--text-color);
   background-color: #383737;
-  padding: 100px 0px 20px 40px;
+  padding: 10rem 0rem .2em .2rem;
   margin: auto; /* Necessary, or else page will extend far right. */
 }
 
