@@ -9339,7 +9339,8 @@ body {
 .bosspic {
   width: 100%;
   height: auto;
-  padding-bottom: 15px;
+  padding-left: .8rem;
+  padding-bottom: 0.9375rem;
   margin: 0px 0px 0px 0px;
 }
 
@@ -9348,7 +9349,7 @@ body {
   font-family: 'Didact Gothic', sans-serif;
   font-size: large;
   font-weight: lighter;
-  padding: 5px;
+  padding: .625rem .625rem .625rem 0.9375rem;
 }
 
 .leadername {
@@ -9424,7 +9425,7 @@ div.jumbotron.countdown {
 }
 
 #faqtext {
-  padding: 0px 50px 20px 20px;
+  padding: 0rem .7rem .3rem .3rem;
 }
 
 #footer {
