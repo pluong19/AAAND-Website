@@ -9417,7 +9417,7 @@ div.jumbotron {
 div.jumbotron.countdown {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 23% 0px 23% 0px;
+  padding: 0rem;
 }
 
 .noIbar {
