@@ -9396,7 +9396,7 @@ div.container-fluid.retreatheader {
 }
 
 .headerbox {
-  padding: 1.3rem .4rem .7rem .4rem;
+  padding: 1rem .4rem .3rem .4rem;
   margin: 0rem;
   background-color: rgba(33, 33, 33, 0.6);
 }
@@ -9407,6 +9407,7 @@ div.container-fluid.retreatheader {
   font-size: xx-large;
   font-weight: 420;
   text-align: center;
+  padding-top: .2rem;
 }
 
 div.jumbotron {
