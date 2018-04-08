@@ -37,7 +37,7 @@ This is the Asian American Association's website built in Zurb's Foundation.
 * Copy the changed files from your `local` to the `www` Finder window.
 * For Windows: TBD
 
-* Remember to eject the mapped folder!
+* When you're completely done, remember to eject the mapped folder!
 
 
 ## How to Verify the Changes Made it to the Official Site ##
