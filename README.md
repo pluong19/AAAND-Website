@@ -1,12 +1,18 @@
 #AAA Foundation
 This is the Asian American Association's website built in Zurb's Foundation.
 
+## Getting Started ##
+* create GitHub account, have previous DDMT add you as collaborator
+* download GitHub Desktop
+* create new repository on GitHub desktop
+* download text editor (Sublime, Brackets, etc.)
+
 ## Pages to Update ##
-* index.html -- header, service trip commissioner
+* index.html -- first year retreat info ASAP 
 * brochure.html -- add image files and actual brochure file (for the freshies)
-* events.html -- add new images for our recent events!
 * contact.html -- add officer images and update text and links
 * Note: All pages should have webmaster and copyright year footer updated.
+* add instagram
 
 ## How To Edit ##
 * To edit text, use your favorite text editor (like Sublime, TextEdit) to edit the files
