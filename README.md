@@ -72,4 +72,4 @@ NOTE: If you are not on campus or cannot connect to `eduroam`, go to `vpnaccess.
 ## Tips
 
 * For multi-line edits in Sublime, you can highlight a string of text and then press Command+D (Or CTRL+D).
-* To add icons, Google "Font Awesome".
+* To add icons, Google "Font Awesome"!
